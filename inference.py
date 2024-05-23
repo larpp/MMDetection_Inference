@@ -33,7 +33,7 @@ def main():
     os.makedirs(f'{results_path}/data_csv') # Predict 값을 저장할 디렉터리 생성
 
     for img in image_li:
-        image_name = img.split('/')[1][:-4]
+        image_name = img.split('/')[-1][:-4]
 
         outputs = inferencer(img, out_dir=results_path, pred_score_thr=pred_score_thr)
         scores = outputs['predictions'][0]['scores']
