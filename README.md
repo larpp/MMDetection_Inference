@@ -4,6 +4,16 @@
 
 코드를 실행하면 모델이 예측한 값들이 (e.g., labels, bounding box information, confidence score, etc) 해당 이미지 파일과 동일한 이름을 가진 csv 파일들과 detection 결과 이미지들이 생성된다.
 
+# USage
+
+```
+python inference.py \
+work_dirs/deformable-detr_r50_16xb2-50e_coco/deformable-detr_r50_16xb2-50e_coco.py(config file path) \
+work_dirs/deformable-detr_r50_16xb2-50e_coco/ddetr_ev_epoch_470.pth(checkpoint file path) \
+--inference_path <Inference Image path> \
+--out_dir <result path>
+```
+
 # Reference
 https://github.com/open-mmlab/mmdetection
 
