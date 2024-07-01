@@ -4,7 +4,7 @@
 
 코드를 실행하면 모델이 예측한 값들이 (e.g., labels, bounding box information, confidence score, etc) 해당 이미지 파일과 동일한 이름을 가진 csv 파일들과 detection 결과 이미지들이 생성된다.
 
-# USage
+# Usage
 
 ```
 python inference.py \
